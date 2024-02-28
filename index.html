@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Demineur</title>
+    <meta charset="UTF-8" />
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <script src="scripts.js"></script>
+    <script>
+        window.onload = function () {
+            Demineur.initialiser();
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="chrono">00:00:00</h1>
+    <div class="page">
+        <h1>
+            Démineur
+        </h1>
+        <div class="jeu" id="plateau">
+
+
+        </div>
+        <div class="options">
+
+            <div id="resultat" class="resultat">
+
+            </div>
+
+            <div class="menus">
+                <div class="menu" onclick="Demineur.demarrageJeu('debutant');">
+                   Débutant
+                </div>
+                <div class="menu" onclick="Demineur.demarrageJeu('intermediare');">
+                    Intermediare
+                </div>
+                <div class="menu" onclick="Demineur.demarrageJeu('expert');">
+                    Expert
+                </div>
+                <div class="menu" onclick="Demineur.demarrageJeu('maitre');">
+                    Maitre
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="classement"></div>
+</body>
+
+</html>
